@@ -128,10 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="TaskScheduler.cpp" />
-    <ClCompile Include="TaskTests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="doctest.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskScheduler.h" />
   </ItemGroup>

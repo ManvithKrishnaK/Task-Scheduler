@@ -3,7 +3,7 @@
 #include "Task.h"
 #include "TaskScheduler.h"
 
-/*int main() {
+int main() {
     TaskScheduler scheduler;
 
     auto task1 = std::make_shared<Task>([] { std::cout << "Task 1 executed" << std::endl; }, std::chrono::milliseconds(2000));
@@ -19,4 +19,4 @@
     scheduler.run();
 
     return 0;
-}*/
+}
