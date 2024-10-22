@@ -1,0 +1,32 @@
+name: C++ CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: sudo apt-get install -y g++ make
+
+      - name: Build the project
+        run: |
+          g++ -std=c++11 -o task_scheduler Task.cpp TaskScheduler.cpp TaskTests.cpp
+          
+      - name: Run unit tests
+        run: ./task_scheduler
+
+      - name: Lint the project
+        run: |
+          sudo apt-get install -y cppcheck
+          cppcheck --enable=all --inconclusive --error-exitcode=1 .
