@@ -10,6 +10,9 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - '**/*.cpp'        # Include all C++ source files
+      - '**/*.h'          # Include all header files
 
 jobs:
   build:
