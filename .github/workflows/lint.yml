@@ -1,6 +1,14 @@
 name: Lint C++ Code
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - '**.cpp'      # Track all C++ source files
+      - '**.h'        # Track all header files
+  pull_request:
+    paths:
+      - '**.cpp'      # Track all C++ source files for pull requests
+      - '**.h'        # Track all header files for pull requests
 
 jobs:
   lint:
