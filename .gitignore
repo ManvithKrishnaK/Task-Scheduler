@@ -1,5 +1,5 @@
 # Ignore everything
-*
+
 
 # But do not ignore .gitignore and .cpp files
 !.gitignore
@@ -11,6 +11,7 @@
 !**/*.yaml
 !**/*.md
 
+*
 # Optional: Ignore specific Visual Studio files and folders
 *.sln
 *.vcxproj*
