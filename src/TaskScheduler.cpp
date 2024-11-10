@@ -25,6 +25,7 @@ int main() {
     //Cancel Task
     scheduler.cancelTask(task1);
 
+    //Join threads
     schedulerThread.join();
     std::cin.get();
     return 0;
