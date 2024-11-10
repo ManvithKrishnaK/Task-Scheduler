@@ -1,5 +1,18 @@
+# Ignore everything
 *
+
+# But do not ignore .gitignore and .cpp files
+!.gitignore
 !*.cpp
 !*.h
 !*.hpp
 !*.exe
+
+# Optional: Ignore specific Visual Studio files and folders
+*.sln
+*.vcxproj*
+# .vscode/
+# .vs/
+# Debug/
+# Release/
+# x64/
