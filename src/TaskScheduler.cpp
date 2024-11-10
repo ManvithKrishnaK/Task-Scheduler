@@ -22,6 +22,7 @@ int main() {
     scheduler.addTask(task2);
     scheduler.addTask(task3);
 
+    //Cancel Task
     scheduler.cancelTask(task1);
 
     schedulerThread.join();
