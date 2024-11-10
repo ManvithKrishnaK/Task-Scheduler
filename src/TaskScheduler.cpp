@@ -5,6 +5,7 @@
 #include "Task.h"
 #include "TaskScheduler.h"
 
+//Main method
 int main() {
     TaskScheduler scheduler;
 
