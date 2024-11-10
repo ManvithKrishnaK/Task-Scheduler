@@ -20,11 +20,8 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cmake clang-tidy
+          sudo apt-get install -y clang-tidy
 
       - name: Run clang-tidy
         run: |
-          mkdir build
-          cd build
-          cmake ..
-          clang-tidy ../*.cpp -- -std=c++17
+          clang-tidy **/*.cpp -- -std=c++17
