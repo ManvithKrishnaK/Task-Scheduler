@@ -2,6 +2,7 @@
 #define TASK_H
 
 #include <functional>
+
 #include <chrono>
 //Class declaration
 class Task {

@@ -10,7 +10,7 @@ int main() {
 
     std::thread schedulerThread([&scheduler]() { scheduler.run(); });
 
-    /// Simulate some delay before adding tasks
+    // Simulate some delay before adding tasks
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
 
     auto task1 = std::make_shared<Task>([] { std::cout << "Task 1 executed" << std::endl; }, std::chrono::milliseconds(2000));
