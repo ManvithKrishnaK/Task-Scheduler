@@ -22,6 +22,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y clang-tidy
 
-      - name: Run clang-tidy
+      - name: Find all cpp files and run clang-tidy
         run: |
-          clang-tidy src/**/*.cpp --extra-arg=-I./include -- -std=c++17
+          find src -name "*.cpp" | xargs clang-tidy --extra-arg=-I./include -- -std=c++17
