@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# Track .cpp, .h, .hpp files in any folder
+!**/*.cpp
+!**/*.h
+!**/*.hpp
+!**/*.exe
+!**/*.yml
+!**/*.yaml
+!**/*.md
+
+# Track .gitignore
+!.gitignore
