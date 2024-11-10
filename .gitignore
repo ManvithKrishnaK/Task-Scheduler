@@ -3,10 +3,13 @@
 
 # But do not ignore .gitignore and .cpp files
 !.gitignore
-!*.cpp
-!*.h
-!*.hpp
-!*.exe
+!**/*.cpp
+!**/*.h
+!**/*.hpp
+!**/*.exe
+!**/*.yml
+!**/*.yaml
+!**/*.md
 
 # Optional: Ignore specific Visual Studio files and folders
 *.sln
